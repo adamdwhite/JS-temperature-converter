@@ -12,24 +12,27 @@
 
     <h3>Insert Temperature:</h3>
     <input id="enteredTemp" type="text" name="temperature">
-    <p>
-        <input type="radio" id="celsius" name="temp" value="celsius">Celsius<br>
-        <input type="radio" id="farenheit" name="temp" value="farenheit">Farenheit<br>
-        <!-- <input type="button" id="convert" name="convert" value="CONVERT TEMPERATURE" onclick="tempMath()"><br> -->
-        <button id="convert" onclick="tempMath()">CONVERT TEMP</button>
 
-        <hr>
-        <div id="output">
-            Converted Temperature:
-            <input type="text" name="converted" value="">
-        </div>
-        <br>
-        <div id="reset">
-            <input type="button" id="clear" name="clear" value="CLEAR OUTPUT" onclick="resetOutput()">
-        </div>
-        <br>
-        <script type="text/javascript" src="converter.js">
-        </script>
+    <h4>Convert to:</h4>
+    <input type="radio" id="celsius" name="temp" value="celsius">Celsius<br>
+    <input type="radio" id="farenheit" name="temp" value="farenheit">Farenheit<br>
+
+    <button id="convert">CONVERT TEMPERATURE</button>
+
+    <hr>
+
+    <h3>Converted Temperature:</h3>
+    <div>
+        <input id="output" type="text" name="converted">
+    </div>
+    <hr>
+
+    <div id="reset">
+        <input type="button" id="clear" name="clear" value="RESET">
+    </div>
+
+    <script type="text/javascript" src="converter.js">
+    </script>
 
 </body>
 
